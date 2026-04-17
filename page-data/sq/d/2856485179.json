@@ -1,0 +1,13 @@
+{
+    "data": {
+        "site": {
+            "siteMetadata": {
+                "title": "Moon Audio",
+                "description": "Stunning sound from the web browser. Enjoy the best listening experience for music and movies played within your web browser.",
+                "author": "Christos Tsakostas @ Moon Audio",
+                "siteUrl": "https://moon.audio",
+                "keywords": "3d, 3d audio, 3d sound, virtual surround, EQ, dynamics compressor, host, plugin, volume, booster, audio, sound, moon, chrome extension, web extension, firefox addon, edge extension, player"
+            }
+        }
+    }
+}
