@@ -1,20 +1,2017 @@
-<html lang="en" data-react-helmet="lang">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    
-    </head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="generator" content="Gatsby 4.10.3" />
+    <meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width" />
+    <meta data-react-helmet="true" name="description" content="Stunning sound from the web browser. Enjoy the best listening experience for music and movies played within your web browser." />
+    <meta data-react-helmet="true" name="keywords" content="3d, 3d audio, 3d sound, virtual surround, EQ, dynamics compressor, host, plugin, volume, booster, audio, sound, magic, chrome extension, web extension, firefox addon, edge extension, player"
+    />
+    <meta data-react-helmet="true" name="author" content="Christos Tsakostas @ Magic Audio" />
+    <meta data-react-helmet="true" name="og:url" content="https://magic.audio" />
+    <meta data-react-helmet="true" name="og:title" content="Live Demo" />
+    <meta data-react-helmet="true" name="og:description" content="Stunning sound from the web browser. Enjoy the best listening experience for music and movies played within your web browser." />
+    <meta data-react-helmet="true" name="og:type" content="website" />
+    <meta data-react-helmet="true" name="og:image" content="https://magic.audio/assets/website-social/website.jpg?1699143575458" />
+    <meta data-react-helmet="true" name="og:url" content="https://magic.audio" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary" />
+    <meta data-react-helmet="true" name="twitter:creator" content="Christos Tsakostas @ Magic Audio" />
+    <meta data-react-helmet="true" name="twitter:image" content="https://magic.audio/assets/website-social/website.jpg?1699143575458" />
+    <meta data-react-helmet="true" name="twitter:title" content="Live Demo" />
+    <meta data-react-helmet="true" name="twitter:description" content="Stunning sound from the web browser. Enjoy the best listening experience for music and movies played within your web browser." />
+    <style data-emotion="css 1yv96yn 1sr2pr6 191lty2 1aipfsn i9gxme xhbqmw 1welx16 h2glfu 12vxty2 1018g2g 11l1twv 15j76c0 1qm1lh 1srbtmc 1egpgfe 6flbmm 95w34a yvl8r3 1kuymt0 1vrqdei aduprr 1ontqvh s6uccb 11m2oh6 wth0qt vubbuv 1y3jpxd hpgf8j 2p8hp3 1qsxih2 tpuqz7 1c0cfyw 1nml2u2 1ha4th6 zoser8 bxbual 2tgrqm 2h07on 1xd5sck 1k2ph5g 18tn63a yyeqza j7qwjs 15fkfws 1px5dlw 1jgznv1 1ho082a 164r41r zv7ju9 1ok5g37 12ojtmj 178yklu 1cd21iy">
+        .css-1yv96yn {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100vh;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
 
-<body>
+        .css-1sr2pr6 {
+            background-color: #070809;
+            color: #fff;
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+            background-image: linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09));
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            position: fixed;
+            z-index: 1100;
+            top: 0;
+            left: auto;
+            right: 0;
+            background: transparent;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        @media print {
+            .css-1sr2pr6 {
+                position: absolute;
+            }
+        }
+
+        .css-191lty2 {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            min-height: 56px;
+        }
+
+        @media (min-width:600px) {
+            .css-191lty2 {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        @media (min-width:0px) and (orientation: landscape) {
+            .css-191lty2 {
+                min-height: 48px;
+            }
+        }
+
+        @media (min-width:600px) {
+            .css-191lty2 {
+                min-height: 64px;
+            }
+        }
+
+        .css-1aipfsn {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-size: 2.1875rem;
+            visibility: hidden;
+        }
+
+        .css-i9gxme {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .css-xhbqmw {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 1.75rem;
+            line-height: 1.235;
+            padding: 8px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @media (min-width:600px) {
+            .css-xhbqmw {
+                font-size: 2.0243rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-xhbqmw {
+                font-size: 2.0243rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-xhbqmw {
+                font-size: 2.0243rem;
+            }
+        }
+
+        .css-xhbqmw a {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            font-family: Megrim;
+            font-size: 2.55rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @media screen and (max-width: 40em) {
+            .css-xhbqmw a {
+                font-size: 1.95rem;
+            }
+        }
+
+        .css-xhbqmw a:visited {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .css-1welx16 {
+            background-color: #070809;
+            color: #fff;
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border-radius: 4px;
+            box-shadow: none;
+            background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+        }
+
+        .css-h2glfu {
+            margin: 0;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 2.333333333333333rem;
+            line-height: 1.167;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width:600px) {
+            .css-h2glfu {
+                font-size: 2.5707rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-h2glfu {
+                font-size: 2.7849rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-h2glfu {
+                font-size: 2.9991rem;
+            }
+        }
+
+        .css-12vxty2 {
+            width: 100%;
+            margin-left: auto;
+            box-sizing: border-box;
+            margin-right: auto;
+            display: block;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 0px;
+            padding-bottom: 16px;
+        }
+
+        @media (min-width:600px) {
+            .css-12vxty2 {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-12vxty2 {
+                max-width: 1200px;
+            }
+        }
+
+        .css-1018g2g {
+            width: 100%;
+            margin-left: auto;
+            box-sizing: border-box;
+            margin-right: auto;
+            display: block;
+            padding-left: 16px;
+            padding-right: 16px;
+            border: 0px solid green;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width:600px) {
+            .css-1018g2g {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1018g2g {
+                max-width: 1200px;
+            }
+        }
+
+        .css-11l1twv {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 100%;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .css-15j76c0 {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 100%;
+        }
+
+        @media (min-width:600px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        .css-1qm1lh {
+            margin-bottom: 16px;
+        }
+
+        .css-1srbtmc {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            margin-top: -8px;
+        }
+
+        .css-1egpgfe {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            font-size: 1.5rem;
+            padding: 8px;
+            border-radius: 50%;
+            overflow: visible;
+            color: #fff;
+            -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+
+        .css-1egpgfe::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-1egpgfe.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-1egpgfe {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-1egpgfe:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        @media (hover: none) {
+            .css-1egpgfe:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-1egpgfe.Mui-disabled {
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .css-6flbmm {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-size: 2.1875rem;
+        }
+
+        .css-95w34a {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-size: 1.5rem;
+            font-size: 3rem;
+        }
+
+        .css-yvl8r3 {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            border: 0px solid red;
+        }
+
+        @media (min-width:600px) {
+            .css-yvl8r3 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-yvl8r3 {
+                -webkit-flex-basis: 66.666667%;
+                -ms-flex-preferred-size: 66.666667%;
+                flex-basis: 66.666667%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 66.666667%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-yvl8r3 {
+                -webkit-flex-basis: 66.666667%;
+                -ms-flex-preferred-size: 66.666667%;
+                flex-basis: 66.666667%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 66.666667%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-yvl8r3 {
+                -webkit-flex-basis: 66.666667%;
+                -ms-flex-preferred-size: 66.666667%;
+                flex-basis: 66.666667%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 66.666667%;
+            }
+        }
+
+        .css-1kuymt0 {
+            margin: auto;
+            position: relative;
+            max-width: 650px;
+            min-height: 400px;
+        }
+
+        .css-1vrqdei {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            border: 0px solid blue;
+        }
+
+        @media (min-width:600px) {
+            .css-1vrqdei {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1vrqdei {
+                -webkit-flex-basis: 33.333333%;
+                -ms-flex-preferred-size: 33.333333%;
+                flex-basis: 33.333333%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 33.333333%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1vrqdei {
+                -webkit-flex-basis: 33.333333%;
+                -ms-flex-preferred-size: 33.333333%;
+                flex-basis: 33.333333%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 33.333333%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-1vrqdei {
+                -webkit-flex-basis: 33.333333%;
+                -ms-flex-preferred-size: 33.333333%;
+                flex-basis: 33.333333%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 33.333333%;
+            }
+        }
+
+        .css-aduprr {
+            background-color: #070809;
+            color: #fff;
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border-radius: 4px;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+            width: 100%;
+        }
+
+        .css-1ontqvh {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .css-s6uccb {
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .css-11m2oh6 {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 8px 22px;
+            border-radius: 4px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            color: #fff;
+            background-color: #DE1B34;
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            padding: 1.125rem;
+        }
+
+        .css-11m2oh6::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-11m2oh6.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-11m2oh6 {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-11m2oh6:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgb(155, 18, 36);
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        @media (hover: none) {
+            .css-11m2oh6:hover {
+                background-color: #DE1B34;
+            }
+        }
+
+        .css-11m2oh6:active {
+            box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .css-11m2oh6.Mui-focusVisible {
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .css-11m2oh6.Mui-disabled {
+            color: rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .css-wth0qt {
+            display: inherit;
+            margin-right: 8px;
+            margin-left: -4px;
+        }
+
+        .css-wth0qt>*:nth-of-type(1) {
+            font-size: 22px;
+        }
+
+        .css-vubbuv {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentColor;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-size: 1.5rem;
+        }
+
+        .css-1y3jpxd {
+            margin: 16px;
+            border: 1px solid #808080;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            visibility: hidden;
+        }
+
+        .css-hpgf8j {
+            padding: 8px;
+        }
+
+        .css-2p8hp3 {
+            width: 356px;
+            height: 185px;
+        }
+
+        .css-1qsxih2 {
+            width: 100%;
+            margin-left: auto;
+            box-sizing: border-box;
+            margin-right: auto;
+            display: block;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @media (min-width:600px) {
+            .css-1qsxih2 {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1qsxih2 {
+                max-width: 1200px;
+            }
+        }
+
+        .css-tpuqz7 {
+            margin-top: 0px;
+            padding-top: 8px;
+            border-top: 1px solid #616263;
+        }
+
+        .css-1c0cfyw {
+            width: 100%;
+            margin-left: auto;
+            box-sizing: border-box;
+            margin-right: auto;
+            display: block;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @media (min-width:600px) {
+            .css-1c0cfyw {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1c0cfyw {
+                max-width: 900px;
+            }
+        }
+
+        .css-1nml2u2 {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 100%;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            margin-top: -32px;
+            width: calc(100% + 32px);
+            margin-left: -32px;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+        }
+
+        .css-1nml2u2>.MuiGrid-item {
+            padding-top: 32px;
+        }
+
+        .css-1nml2u2>.MuiGrid-item {
+            padding-left: 32px;
+        }
+
+        .css-1ha4th6 {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 100%;
+        }
+
+        @media (min-width:600px) {
+            .css-1ha4th6 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1ha4th6 {
+                -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 25%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1ha4th6 {
+                -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 25%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-1ha4th6 {
+                -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 25%;
+            }
+        }
+
+        .css-zoser8 {
+            padding-top: 8px;
+        }
+
+        .css-bxbual {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.43;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .css-2tgrqm {
+            margin: 0;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+
+        .css-2h07on {
+            margin: 0;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.57;
+        }
+
+        .css-1xd5sck {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 100%;
+        }
+
+        @media (min-width:600px) {
+            .css-1xd5sck {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1xd5sck {
+                -webkit-flex-basis: 75%;
+                -ms-flex-preferred-size: 75%;
+                flex-basis: 75%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 75%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1xd5sck {
+                -webkit-flex-basis: 75%;
+                -ms-flex-preferred-size: 75%;
+                flex-basis: 75%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 75%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-1xd5sck {
+                -webkit-flex-basis: 75%;
+                -ms-flex-preferred-size: 75%;
+                flex-basis: 75%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 75%;
+            }
+        }
+
+        .css-1k2ph5g {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 100%;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            margin-top: -8px;
+            width: calc(100% + 8px);
+            margin-left: -8px;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+        }
+
+        .css-1k2ph5g>.MuiGrid-item {
+            padding-top: 8px;
+        }
+
+        .css-1k2ph5g>.MuiGrid-item {
+            padding-left: 8px;
+        }
+
+        .css-18tn63a {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 50%;
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 50%;
+        }
+
+        @media (min-width:600px) {
+            .css-18tn63a {
+                -webkit-flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 50%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-18tn63a {
+                -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 25%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-18tn63a {
+                -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 25%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-18tn63a {
+                -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 25%;
+            }
+        }
+
+        .css-yyeqza {
+            margin: 0;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .css-j7qwjs {
+            display: none !important;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .css-15fkfws {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.43;
+            padding: 8px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .css-15fkfws a {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+        }
+
+        .css-15fkfws a:visited {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .css-15fkfws:hover {
+            background-color: #1D1E1F;
+        }
+
+        .css-1px5dlw {
+            margin: 0;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            border-width: 0;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.12);
+            border-bottom-width: thin;
+        }
+
+        .css-1jgznv1 {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 50%;
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 50%;
+        }
+
+        @media (min-width:600px) {
+            .css-1jgznv1 {
+                -webkit-flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 50%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1jgznv1 {
+                -webkit-flex-basis: 16.666667%;
+                -ms-flex-preferred-size: 16.666667%;
+                flex-basis: 16.666667%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 16.666667%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1jgznv1 {
+                -webkit-flex-basis: 16.666667%;
+                -ms-flex-preferred-size: 16.666667%;
+                flex-basis: 16.666667%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 16.666667%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-1jgznv1 {
+                -webkit-flex-basis: 16.666667%;
+                -ms-flex-preferred-size: 16.666667%;
+                flex-basis: 16.666667%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 16.666667%;
+            }
+        }
+
+        .css-1ho082a {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 50%;
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 50%;
+        }
+
+        @media (min-width:600px) {
+            .css-1ho082a {
+                -webkit-flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 50%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1ho082a {
+                -webkit-flex-basis: 33.333333%;
+                -ms-flex-preferred-size: 33.333333%;
+                flex-basis: 33.333333%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 33.333333%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1ho082a {
+                -webkit-flex-basis: 33.333333%;
+                -ms-flex-preferred-size: 33.333333%;
+                flex-basis: 33.333333%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 33.333333%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-1ho082a {
+                -webkit-flex-basis: 33.333333%;
+                -ms-flex-preferred-size: 33.333333%;
+                flex-basis: 33.333333%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 33.333333%;
+            }
+        }
+
+        .css-164r41r {
+            margin-top: 8px;
+        }
+
+        .css-zv7ju9 {
+            margin-top: 0px;
+        }
+
+        .css-1ok5g37 {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 0.8125rem;
+            line-height: 1.75;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 4px 5px;
+            border-radius: 4px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            color: inherit;
+            border-color: currentColor;
+            font-size: 0.61rem;
+        }
+
+        .css-1ok5g37::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-1ok5g37.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-1ok5g37 {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-1ok5g37:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        @media (hover: none) {
+            .css-1ok5g37:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-1ok5g37.Mui-disabled {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .css-12ojtmj {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 0.8125rem;
+            line-height: 1.75;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 4px 5px;
+            border-radius: 4px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            color: inherit;
+            border-color: currentColor;
+            font-size: 0.75rem;
+        }
+
+        .css-12ojtmj::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-12ojtmj.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-12ojtmj {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-12ojtmj:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        @media (hover: none) {
+            .css-12ojtmj:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-12ojtmj.Mui-disabled {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .css-178yklu {
+            margin-top: 24px;
+        }
+
+        .css-1cd21iy {
+            margin: 0;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.43;
+            text-align: center;
+        }
+    </style>
+    <style data-emotion="css-global 1nzscht">
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        strong,
+        b {
+            font-weight: 700;
+        }
+
+        body {
+            margin: 0;
+            color: #fff;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            background-color: #030303;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+        }
+
+        body::backdrop {
+            background-color: #030303;
+        }
+    </style>
+    <title data-react-helmet="true">Live Demo | Magic.Audio</title>
+    <style>
+        .gatsby-image-wrapper {
+            position: relative;
+            overflow: hidden
+        }
+
+        .gatsby-image-wrapper picture.object-fit-polyfill {
+            position: static !important
+        }
+
+        .gatsby-image-wrapper img {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            margin: 0;
+            max-width: none;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            object-fit: cover
+        }
+
+        .gatsby-image-wrapper [data-main-image] {
+            opacity: 0;
+            transform: translateZ(0);
+            transition: opacity .25s linear;
+            will-change: opacity
+        }
+
+        .gatsby-image-wrapper-constrained {
+            display: inline-block;
+            vertical-align: top
+        }
+    </style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript>
+    <script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let
+        a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity
+        500ms linear")}))}),!0);</script>
+    <link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml" />
+    <link rel="icon" href="/favicon-32x32.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" type="image/png" />
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=03f59378bfd0f8c1803e23ddcb7e11d2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyXsosBO5Xw.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/megrim/v16/46kulbz5WjvLqJZVam_h.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/ballet/v27/QGYyz_MYZA-HM4NjuGOVnUEXme1I4Xi3O4a0Ew.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBO5Xw.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyVVpcBO5Xw.woff2" />
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto Condensed;
+            font-family: Megrim;
+            font-family: Ballet;
+            font-style: normal;
+            font-weight: 300;
+            font-weight: 400;
+            src: url(/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyXsosBO5Xw.woff2) format("woff2");
+            src: url(/static/webfonts/s/megrim/v16/46kulbz5WjvLqJZVam_h.woff2) format("woff2");
+            src: url(/static/webfonts/s/ballet/v27/QGYyz_MYZA-HM4NjuGOVnUEXme1I4Xi3O4a0Ew.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto Condensed;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBO5Xw.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto Condensed;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyVVpcBO5Xw.woff2) format("woff2")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto Condensed;
+            font-style: normal;
+            font-weight: 300;
+            src: url(/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyXsosBO5Xo.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto Condensed;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBO5Xo.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Roboto Condensed;
+            font-style: normal;
+            font-weight: 700;
+            src: url(/static/webfonts/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyVVpcBO5Xo.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Megrim;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/webfonts/s/megrim/v16/46kulbz5WjvLqJZVam_n.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Ballet;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/webfonts/s/ballet/v27/QGYyz_MYZA-HM4NjuGOVnUEXme1I4Xi3O4a0FQ.woff) format("woff")
+        }
+    </style>
+    <script data-gatsby="web-vitals-polyfill">
+        ! function() {
+            var e, t, n, i, r = {
+                    passive: !0,
+                    capture: !0
+                },
+                a = new Date,
+                o = function() {
+                    i = [], t = -1, e = null, f(addEventListener)
+                },
+                c = function(i, r) {
+                    e || (e = r, t = i, n = new Date, f(removeEventListener), u())
+                },
+                u = function() {
+                    if (t >= 0 && t < n - a) {
+                        var r = {
+                            entryType: "first-input",
+                            name: e.type,
+                            target: e.target,
+                            cancelable: e.cancelable,
+                            startTime: e.timeStamp,
+                            processingStart: e.timeStamp + t
+                        };
+                        i.forEach((function(e) {
+                            e(r)
+                        })), i = []
+                    }
+                },
+                s = function(e) {
+                    if (e.cancelable) {
+                        var t = (e.timeStamp > 1e12 ? new Date : performance.now()) - e.timeStamp;
+                        "pointerdown" == e.type ? function(e, t) {
+                            var n = function() {
+                                    c(e, t), a()
+                                },
+                                i = function() {
+                                    a()
+                                },
+                                a = function() {
+                                    removeEventListener("pointerup", n, r), removeEventListener("pointercancel", i, r)
+                                };
+                            addEventListener("pointerup", n, r), addEventListener("pointercancel", i, r)
+                        }(t, e) : c(t, e)
+                    }
+                },
+                f = function(e) {
+                    ["mousedown", "keydown", "touchstart", "pointerdown"].forEach((function(t) {
+                        return e(t, s, r)
+                    }))
+                },
+                p = "hidden" === document.visibilityState ? 0 : 1 / 0;
+            addEventListener("visibilitychange", (function e(t) {
+                "hidden" === document.visibilityState && (p = t.timeStamp, removeEventListener("visibilitychange", e, !0))
+            }), !0);
+            o(), self.webVitals = {
+                firstInputPolyfill: function(e) {
+                    i.push(e), u()
+                },
+                resetFirstInputPolyfill: o,
+                get firstHiddenTime() {
+                    return p
+                }
+            }
+        }();
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            "platform": "gatsby"
+        });
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MZV4M9Q');
+    </script>
+    <link as="script" rel="preload" href="/webpack-runtime-912835daca686f44436f.js" />
+    <link as="script" rel="preload" href="/framework-cb329e636ea6c5434a05.js" />
+    <link as="script" rel="preload" href="/feb90782-521e91423966c599ed44.js" />
+    <link as="script" rel="preload" href="/a59c5be8-c1bb0a4f7fbd14642d4f.js" />
+    <link as="script" rel="preload" href="/932be2ab-32ecd237043818e75e66.js" />
+    <link as="script" rel="preload" href="/a9400ff7-57f174cb0f5f28fcf320.js" />
+    <link as="script" rel="preload" href="/0cf7c43b-c34dabd5a587c04a4e7e.js" />
+    <link as="script" rel="preload" href="/app-e27fdb143abe2b2a915b.js" />
+    <link as="script" rel="preload" href="/5933f3ba-c983d9efc6236f7c8ef8.js" />
+    <link as="script" rel="preload" href="/06045bc7-df7598c05d9e1694a9ae.js" />
+    <link as="script" rel="preload" href="/ebec3a01-bbc373b9558eda22b20c.js" />
+    <link as="script" rel="preload" href="/6726d5e6a595a96f7c6686e36b9bd1364195b138-cd518e89eee132503b97.js" />
+    <link as="script" rel="preload" href="/04a7fa58d64f06524587a97b4ba966c5f3ed8bf9-f5e93b8e614be5c51734.js" />
+    <link as="script" rel="preload" href="/5db82c97fd2a7584079fddedfffc830f247a44dc-0379b4c95b5167adb1ae.js" />
+    <link as="script" rel="preload" href="/fe9d726cd40d2c9725d366eafef1e4355d67c7e2-b78d2f8dd8a6c9d1e661.js" />
+    <link as="script" rel="preload" href="/component---src-pages-web-extension-addon-real-time-demo-js-37d5d89402036090ceca.js" />
+    <link as="fetch" rel="preload" href="../../page-data/web-extension-addon/real-time-demo/page-data.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="../../page-data/sq/d/2856485179.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="../../page-data/app-data.json" crossorigin="anonymous" />
+</head>
+
     <div id="___gatsby">
         <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
             <div class="MuiBox-root css-1yv96yn">
+                <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1sr2pr6">
+                    <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1aipfsn" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                        <div class="MuiBox-root css-i9gxme"></div>
+                        <div class="css-xhbqmw"><a href="/">Magic Audio</a></div>
+                        <div class="MuiBox-root css-i9gxme"></div>
+                    </div>
+                </header>
                 <main class="MuiBox-root css-i9gxme">
-                   
+                    <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2"></div>
+                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1welx16">
+                        <h1 class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter css-h2glfu">Real-time demo<br/></h1>
+                    </div>
+                    <div class="MuiContainer-root MuiContainer-maxWidthLg css-12vxty2">
+                        <div class="MuiContainer-root MuiContainer-maxWidthLg css-1018g2g">
+                            <div class="MuiGrid-root MuiGrid-container css-11l1twv">
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0">
+                                    <div class="MuiBox-root css-1qm1lh">
+                                        <div class="MuiBox-root css-1srbtmc"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1egpgfe" tabindex="0" type="button" aria-label="previous song"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-6flbmm" focusable="false" color="#F1F2F3" aria-hidden="true" viewBox="0 0 24 24" data-testid="FastRewindRoundedIcon"><path d="M11 16.07V7.93c0-.81-.91-1.28-1.58-.82l-5.77 4.07c-.56.4-.56 1.24 0 1.63l5.77 4.07c.67.47 1.58 0 1.58-.81zm1.66-3.25 5.77 4.07c.66.47 1.58-.01 1.58-.82V7.93c0-.81-.91-1.28-1.58-.82l-5.77 4.07c-.57.4-.57 1.24 0 1.64z"></path></svg></button>
+                                            <button
+                                                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1egpgfe" tabindex="0" type="button" aria-label="play"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-95w34a" focusable="false" color="#F1F2F3" aria-hidden="true" viewBox="0 0 24 24" data-testid="PlayArrowRoundedIcon"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"></path></svg></button>
+                                                <button
+                                                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1egpgfe" tabindex="0" type="button" aria-label="next song"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-6flbmm" focusable="false" color="#F1F2F3" aria-hidden="true" viewBox="0 0 24 24" data-testid="FastForwardRoundedIcon"><path d="m5.58 16.89 5.77-4.07c.56-.4.56-1.24 0-1.63L5.58 7.11C4.91 6.65 4 7.12 4 7.93v8.14c0 .81.91 1.28 1.58.82zM13 7.93v8.14c0 .81.91 1.28 1.58.82l5.77-4.07c.56-.4.56-1.24 0-1.63l-5.77-4.07c-.67-.47-1.58 0-1.58.81z"></path></svg></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-8 css-yvl8r3">
+                                    <div class="MuiBox-root css-1kuymt0"></div>
+                                </div>
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-4 css-1vrqdei">
+                                    <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-aduprr">
+                                        <ul class="MuiList-root MuiList-padding MuiList-dense css-1ontqvh"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-s6uccb"><button class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-11m2oh6" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeLarge css-wth0qt"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ExtensionIcon"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></svg></span>Get the Web Extension / Addon</button></div>
+                        </div>
+                    </div>
+                    <div class="MuiBox-root css-1y3jpxd">
+                        <div class="MuiBox-root css-hpgf8j"></div>
+                        <div class="MuiBox-root css-2p8hp3">
+                            <div id="videoPlaceholder-"></div>
+                            <div id="videoPlaceholder-0"></div>
+                            <div id="videoPlaceholder-1"></div>
+                        </div>
+                    </div>
                 </main>
+                <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                    <div class="MuiBox-root css-tpuqz7">
+                        <div class="MuiContainer-root MuiContainer-maxWidthMd css-1c0cfyw">
+                            <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1nml2u2">
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 css-1ha4th6">
+                                    <div class="MuiBox-root css-zoser8">
+                                        <div class="css-bxbual">
+                                            <h6 class="MuiTypography-root MuiTypography-subtitle1 css-2tgrqm">Magic Audio LLC</h6>
+                                            <h6 class="MuiTypography-root MuiTypography-subtitle2 css-2h07on">1309 Coffeen Avenue, STE 1200</h6>
+                                            <h6 class="MuiTypography-root MuiTypography-subtitle2 css-2h07on">Sheridan, WY, 82801</h6>
+                                            <h6 class="MuiTypography-root MuiTypography-subtitle2 css-2h07on">USA</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9 css-1xd5sck">
+                                    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-1k2ph5g">
+                                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-3 css-18tn63a">
+                                            <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-yyeqza">Product</p>
+                                            <div class="css-j7qwjs">
+                                                <div class="css-15fkfws"><a href="/web-extension-addon">Web extension / addon</a></div>
+                                                <hr class="MuiDivider-root MuiDivider-fullWidth css-1px5dlw" />
+                                                <div class="css-15fkfws"><a href="/web-extension-addon/real-time-demo">Real-time demo</a></div>
+                                                <hr class="MuiDivider-root MuiDivider-fullWidth css-1px5dlw" />
+                                                <div class="css-15fkfws"><a href="/plans-and-pricing">Plans and pricing</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-3 css-18tn63a">
+                                            <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-yyeqza">Company</p>
+                                            <div class="css-j7qwjs">
+                                                <div class="css-15fkfws"><a href="/company/about">About</a></div>
+                                                <div class="css-15fkfws"><a href="/company/contact">Contact</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-2 css-1jgznv1">
+                                            <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-yyeqza">Connect</p>
+                                            <div class="css-j7qwjs">
+                                                <div class="css-15fkfws"><a href="https://www.instagram.com/magicaudiollc/" target="_blank" rel="noreferrer">Instagram</a></div>
+                                                <div class="css-15fkfws"><a href="https://www.facebook.com/MagicAudioLLC" target="_blank" rel="noreferrer">Facebook</a></div>
+                                                <div class="css-15fkfws"><a href="https://www.linkedin.com/company/magic-audio-llc" target="_blank" rel="noreferrer">Linked In</a></div>
+                                                <div class="css-15fkfws"><a href="https://www.youtube.com/channel/UCEKwonmd0DZoSmp7SYS1U1w/playlists" target="_blank" rel="noreferrer">YouTube</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-4 css-1ho082a">
+                                            <p class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-yyeqza">Legal</p>
+                                            <div class="css-j7qwjs">
+                                                <div class="css-15fkfws"><a href="/legal/privacy-policy">Privacy Policy</a></div>
+                                                <div class="css-15fkfws"><a href="/legal/cookie-policy">Cookie Policy</a></div>
+                                                <div class="css-15fkfws"><a href="/legal/terms-and-conditions">Terms and Conditions</a></div>
+                                                <div class="css-15fkfws"><a href="/legal/disclaimer">Disclaimer</a></div>
+                                            </div>
+                                            <hr class="MuiDivider-root MuiDivider-fullWidth css-1px5dlw" />
+                                            <div class="MuiBox-root css-164r41r"></div>
+                                            <div class="MuiBox-root css-zv7ju9"><button class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-1ok5g37" tabindex="0" type="button">Do Not Sell My Personal Information</button></div>
+                                            <div
+                                                class="MuiBox-root css-164r41r"></div>
+                                        <div class="MuiBox-root css-zv7ju9"><button class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root termly-cookie-preference-button css-12ojtmj" tabindex="0"
+                                                type="button">Manage Cookie Preferences</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MuiBox-root css-178yklu">
+                        <p class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1cd21iy">©
+                            <!-- -->2023
+                            <!-- -->Magic Audio LLC. All rights reserved.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+    <script id="gatsby-script-loader">
+        /*<![CDATA[*/
+        window.pagePath = "/web-extension-addon/real-time-demo/";
+        window.___webpackCompilationHash = "a082092897a8089185c4"; /*]]>*/
+    </script>
+    <script id="gatsby-chunk-mapping">
+        /*<![CDATA[*/
+        window.___chunkMapping = {
+            "polyfill": ["/polyfill-f2d1bc9f2dd3ed4b63f3.js"],
+            "app": ["/app-e27fdb143abe2b2a915b.js"],
+            "component---src-pages-404-js": ["/component---src-pages-404-js-d44be6b8d45f2651ec38.js"],
+            "component---src-pages-account-sign-in-js": ["/component---src-pages-account-sign-in-js-7127f71da22bc873db26.js"],
+            "component---src-pages-authorization-js": ["/component---src-pages-authorization-js-94c651d01ef37c8e9719.js"],
+            "component---src-pages-awesome-mdx": ["/component---src-pages-awesome-mdx-c3fb9e0acd668243677c.js"],
+            "component---src-pages-company-about-js": ["/component---src-pages-company-about-js-e4bdfc7129e5c52fe760.js"],
+            "component---src-pages-company-contact-js": ["/component---src-pages-company-contact-js-18ff3f66940023893d3e.js"],
+            "component---src-pages-index-js": ["/component---src-pages-index-js-5ecb41e27d8a0ac26a11.js"],
+            "component---src-pages-labs-js": ["/component---src-pages-labs-js-04e0f047f15dd54a5279.js"],
+            "component---src-pages-legal-cookie-policy-js": ["/component---src-pages-legal-cookie-policy-js-a3904c6593e1bcb34c1a.js"],
+            "component---src-pages-legal-disclaimer-js": ["/component---src-pages-legal-disclaimer-js-daf18ecc4ae1e6fe1508.js"],
+            "component---src-pages-legal-privacy-policy-js": ["/component---src-pages-legal-privacy-policy-js-397902d2c6a343374d5e.js"],
+            "component---src-pages-legal-terms-and-conditions-js": ["/component---src-pages-legal-terms-and-conditions-js-a9c26d000d3b3a48d239.js"],
+            "component---src-pages-legal-terms-of-service-mdx": ["/component---src-pages-legal-terms-of-service-mdx-ed2fca38fab1d4024ff9.js"],
+            "component---src-pages-legal-user-data-deletion-mdx": ["/component---src-pages-legal-user-data-deletion-mdx-30813b43d7ffdabe0bc1.js"],
+            "component---src-pages-partners-glaxf-voice-activity-detection-js": ["/component---src-pages-partners-glaxf-voice-activity-detection-js-7194a599b7172896d2e7.js"],
+            "component---src-pages-plans-and-pricing-js": ["/component---src-pages-plans-and-pricing-js-5712803473b59679a575.js"],
+            "component---src-pages-web-extension-addon-js": ["/component---src-pages-web-extension-addon-js-b3e85d5d73e0b3c675ac.js"],
+            "component---src-pages-web-extension-addon-real-time-demo-js": ["/component---src-pages-web-extension-addon-real-time-demo-js-37d5d89402036090ceca.js"],
+            "component---src-pages-web-extension-addon-roadmap-js": ["/component---src-pages-web-extension-addon-roadmap-js-d659dee43df75abef69e.js"]
+        }; /*]]>*/
+    </script>
+    <script  nomodule=""></script>
+    <script src="../../component---src-pages-web-extension-addon-real-time-demo-js-37d5d89402036090ceca.js" async=""></script>
+    <script src="../../fe9d726cd40d2c9725d366eafef1e4355d67c7e2-b78d2f8dd8a6c9d1e661.js" async=""></script>
+    <script src="../../5db82c97fd2a7584079fddedfffc830f247a44dc-0379b4c95b5167adb1ae.js" async=""></script>
+    <script src="../../04a7fa58d64f06524587a97b4ba966c5f3ed8bf9-f5e93b8e614be5c51734.js" async=""></script>
+    <script src="../../6726d5e6a595a96f7c6686e36b9bd1364195b138-cd518e89eee132503b97.js" async=""></script>
+    <script src="../../ebec3a01-bbc373b9558eda22b20c.js" async=""></script>
+    <script src="../../06045bc7-df7598c05d9e1694a9ae.js" async=""></script>
     <script src="../../5933f3ba-c983d9efc6236f7c8ef8.js" async=""></script>
     <script src="../../app-e27fdb143abe2b2a915b.js" async=""></script>
     <script src="../../0cf7c43b-c34dabd5a587c04a4e7e.js" async=""></script>
@@ -24,8 +2021,6 @@
     <script src="../../feb90782-521e91423966c599ed44.js" async=""></script>
     <script src="../../framework-cb329e636ea6c5434a05.js" async=""></script>
     <script src="../../webpack-runtime-912835daca686f44436f.js" async=""></script>
-
-
 </body>
 
 </html>
