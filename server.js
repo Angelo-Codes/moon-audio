@@ -22,6 +22,11 @@ const MIME = {
   '.webmanifest': 'application/manifest+json',
 };
 
+const visualizerFixPath = path.join(ROOT, 'visualizer-fix.js');
+const VISUALIZER_FIX_SCRIPT = fs.existsSync(visualizerFixPath)
+  ? `<script>\n${fs.readFileSync(visualizerFixPath, 'utf8')}\n</script>`
+  : '';
+
 http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
 
@@ -57,6 +62,19 @@ http.createServer((req, res) => {
     }
 
     const ext = path.extname(filePath).toLowerCase();
+
+    if (ext === '.html' && VISUALIZER_FIX_SCRIPT) {
+      let html = data.toString('utf8');
+      if (html.includes('</body>')) {
+        html = html.replace('</body>', VISUALIZER_FIX_SCRIPT + '\n</body>');
+      } else {
+        html = html + VISUALIZER_FIX_SCRIPT;
+      }
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(html);
+      return;
+    }
+
     res.writeHead(200, {
       'Content-Type': MIME[ext] || 'application/octet-stream'
     });
@@ -64,4 +82,5 @@ http.createServer((req, res) => {
   });
 }).listen(PORT, () => {
   console.log(`running at http://localhost:${PORT}`);
+  console.log(`visualizer fix: ${VISUALIZER_FIX_SCRIPT ? 'INJECTED ✓' : 'NOT FOUND'}`);
 });
